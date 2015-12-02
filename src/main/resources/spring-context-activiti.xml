@@ -12,7 +12,7 @@
 	
 	<!-- Activiti begin -->
 	<bean id="processEngineConfiguration" class="org.activiti.spring.SpringProcessEngineConfiguration">
-		<property name="dataSource" ref="dataSource" />
+		<property name="dataSource" ref="multipleDataSource" />
 		<property name="transactionManager" ref="transactionManager" />
 		<property name="deploymentResources" value="classpath*:/act/deployments/**/*.bar"/>
 		<property name="databaseSchemaUpdate" value="true" />
